@@ -32,8 +32,9 @@
 				return false;
 			}
 		});
-		if("{{.}}" == "用户名或密码不正确"){
-			$("#msg").text("用户名或密码不正确");
+		//JQ 判断 内容等于用户名或密码不正确等于就替换，不等于就显示原来的
+		if("{{.}}" == "用户名密码不正确或者未注册"){
+			$("#msg").text("用户名密码不正确或者未注册");
 		}
 	});
 </script>
@@ -58,7 +59,7 @@
 							</div>
 							<div class="msg_cont">
 								<b></b>
-								<span class="errorMsg" id = "msg">请输入用户名和密码</span>
+							 <span class="errorMsg" id = "msg">请输入用户名和密码</span> 	<!--mgs 由JQ进行判断 -->
 							</div>
 							<div class="form">
 								<form action="/login" method="POST">
@@ -81,7 +82,7 @@
 			</div>
 		<div id="bottom">
 			<span>
-			bookstore 算法第一人北大何书文-书文教育 电话微信：15010729356 邮箱：1201220707@pku.edu.cn
+			 书香门第
 			</span>
 		</div>
 </body>

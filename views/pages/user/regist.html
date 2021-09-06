@@ -55,10 +55,12 @@
 				return false;
 			}
 		});
-		$("#msg").hide()
+		//js 用美元符号$
+		$("#msg").hide();//隐藏方法hide()
 		if("{{.}}" == "用户名已存在"){
 			$("#msg").show()
 		}
+		//动态验证
 		// 发送Ajax请求验证用户名是否存在
 		// 给输入用户名的文本绑定change事件
 		$("#username").change(function(){
@@ -127,7 +129,7 @@
 			</div>
 		<div id="bottom">
 			<span>
-			bookstore 算法第一人北大何书文-书文教育  
+			测试，学习
 			</span>
 		</div>
 </body>
