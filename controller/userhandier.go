@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"/dao"
+	"bookstat/dao"
 	"net/http"
 	"text/template"
 )

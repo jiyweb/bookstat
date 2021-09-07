@@ -21,5 +21,6 @@ func main() {
 	http.HandleFunc("login", controller.Login)
 	http.HandleFunc("/regist", controller.Regist)
 	http.HandleFunc("/checkUserName", controller.CheckUserName)
+	http.HandleFunc("/getBooks", controller.GetBooks)
 	http.ListenAndServe(":8080", nil)
 }
